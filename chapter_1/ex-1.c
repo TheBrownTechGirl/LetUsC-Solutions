@@ -1,6 +1,9 @@
 
 #include <stdio.h>
 
+/*This program is to calculate gross salary after taking input of basic salary and calculating 
+two types of allowances */ 
+
 int main()
 {
 	float bSal;
