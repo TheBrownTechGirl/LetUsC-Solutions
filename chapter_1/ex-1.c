@@ -1,25 +1,23 @@
 
 #include <stdio.h>
 
-/*This program is to calculate gross salary after taking input of basic salary and calculating 
-two types of allowances */ 
+/* The distance between two cities (in km.) is input through the
+keyboard. Write a program to convert and print this distance
+in meters, feet, inches and centimeters. */ 
 
 int main()
 {
-	float bSal;
+	distanceKm;
+	inMeters = distanceKm * 1000;	//1 km = 1000 m
+	inFeet = distanceKm * 3280.84;  // 1 km = 3280.84 ft
+	inCentimeters = distanceKm * 100000;	// 1 km = 100000 cm;
 
-	printf("Input Ramesh's basic salary\n");
-	scanf ( "%f", &bSal);
+	printf("Input the distace between the two cities in kilometers.\n");
+	scanf("%f", &distanceKm );
 
-	float dAlw = bSal * 0.4;
-	float hAlw = bSal * 0.2;
-	float gSal;
-
-
-	gSal = bSal+dAlw+hAlw;
-	printf("Ramesh's gross salary is: %f\n", gSal );
-
-
+	printf("The distance in meters is: \n", inMeters);
+	printf("The distance in feet is: \n", inFeet);
+	printf("The distance in centimeters is: \n", inCentimeters);
 
 	return 0;
 
