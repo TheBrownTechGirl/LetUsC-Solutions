@@ -12,9 +12,9 @@ int main()
 	
 
 	printf("Input the marks of five subjects. \n");
-	scanf( "%d %d %d %d %d", &sub1, &sub2, &sub3, &sub4, &sub5 );
+	
 
-	if(sub1 > 100 || sub2 > 100 || sub3 > 100 || sub4 > 100 || sub5 > 100){
+	if(scanf( "%d %d %d %d %d", &sub1, &sub2, &sub3, &sub4, &sub5 ) > 100){
 
 		printf("The maximum marks can be 100.\n");
 	}
