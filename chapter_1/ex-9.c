@@ -17,8 +17,8 @@ int main()
 
 	//Checking if the input is a four digit number.
 	while (temp < 1000 || temp > 9999){
-		printf("The number needs to be of five digits. \n"); 
-		printf("Input a five digit number.\n");
+		printf("The number needs to be of four-digits. \n"); 
+		printf("Input a four-digits number.\n");
 		scanf("%d", &newNum); 
 		temp = newNum;
 		
@@ -34,7 +34,7 @@ int main()
 	int digits = log10(temp);
 
 		//Dividing the number with 10 ^ (digits - 1) for the first number
-	int firstDigit = temp % pow(10, digits);
+	int firstDigit = temp / pow(10, digits);
 
 	//Adding first and last digit to print
 	printf("The sum of the first and last digits of the number %d is %d\n", temp, lastDigit + firstDigit);
